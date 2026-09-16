@@ -1,0 +1,16 @@
+# Build files
+build/
+*.o
+*.out
+*.exe
+
+# Editor
+.vscode/
+
+# Temporary files
+*.tmp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
