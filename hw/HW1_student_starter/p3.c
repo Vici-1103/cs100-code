@@ -7,6 +7,20 @@
 
 int main(void)
 {
-    /* TODO: your code here */
+    int num;
+    scanf("%d", &num);
+    int max = num;
+    int sum = 0;
+    while (num != 0)
+    {
+        sum += num;
+        if (num >= max)
+        {
+            max = num;
+        }
+        scanf("%d", &num);
+    }
+    printf("sum: %d\n", sum);
+    printf("maximum: %d\n", max);
     return 0;
 }

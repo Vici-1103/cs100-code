@@ -7,6 +7,33 @@
 
 int main(void)
 {
-    /* TODO: your fixed code here */
-    return 0;
+	// Calculate the average score of all students in a class.
+
+	int num = 0;
+	double sum = 0;
+
+	printf("How many students are there?\n");
+	scanf("%d", &num);
+	printf("What are their scores?\n");
+
+	// We programmers count from zero!
+
+	for (int i = 0; i < num; i++)
+	{
+		double score;
+		scanf("%lf", &score);
+		sum += score;
+	}
+
+	double average = sum / num;
+	if (average == 60)
+		printf("Good!\n");
+	else if (average > 60)
+		printf("Excellent!\n");
+	else
+		printf("Bad!\n");
+
+	printf("Average score is %.2f.\n", average);
+
+	return 0;
 }
